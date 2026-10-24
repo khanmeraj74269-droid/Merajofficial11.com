@@ -1,8 +1,8 @@
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meraj Official</title>
+    <title>Meraj Official | Creative Studio</title>
 
     <style>
         * {
@@ -15,26 +15,27 @@
             font-family: Arial, sans-serif;
             background: #080808;
             color: white;
+            line-height: 1.6;
         }
 
         header {
-            padding: 25px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 22px 8%;
             border-bottom: 1px solid #292929;
         }
 
         .logo {
             color: #f5c451;
-            font-size: 25px;
+            font-size: 24px;
             font-weight: bold;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 20px;
+            margin-left: 15px;
         }
 
         nav a:hover {
@@ -48,65 +49,58 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
+            background: radial-gradient(circle, #29200b, #080808 70%);
         }
 
-        .tag {
+        .hero h1 {
+            font-size: clamp(36px, 7vw, 68px);
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
             color: #f5c451;
-            border: 1px solid #66501c;
-            padding: 10px 18px;
-            border-radius: 30px;
+        }
+
+        .hero p {
+            color: #ccc;
+            max-width: 600px;
             margin-bottom: 25px;
-        }
-
-        h1 {
-            font-size: clamp(38px, 7vw, 75px);
-            margin-bottom: 20px;
-        }
-
-        h1 span {
-            color: #f5c451;
-        }
-
-        .description {
-            color: #b8b8b8;
-            max-width: 550px;
-            line-height: 1.8;
-            margin-bottom: 30px;
         }
 
         .button {
             display: inline-block;
             background: #f5c451;
             color: #080808;
-            padding: 15px 28px;
-            border-radius: 8px;
+            padding: 12px 24px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: bold;margin: 5px;
+            font-weight: bold;
+            margin: 5px;
         }
 
         .button:hover {
             background: white;
-            transform: translateY(-2px);
         }
 
-        .secondary {
-            background: transparent;
-            color: #f5c451;
-            border: 1px solid #f5c451;
-        }
-
-        .services {
-            padding: 50px 8%;
+        section {
+            padding: 65px 8%;
             text-align: center;
         }
 
-        .services h2 {
+        section h2 {
+            color: #f5c451;
             font-size: 32px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
-        .cards {
+        .description {
+            color: #bbb;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .services {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
@@ -114,603 +108,45 @@
 
         .card {
             background: #141414;
-            border: 1px solid #292929;
-            border-radius: 14px;
-            padding: 30px 20px;
+            padding: 28px;
+            border: 1px solid #303030;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #f5c451;
+            transform: translateY(-5px);
         }
 
         .card h3 {
-            color: #f5c451;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #b8b8b8;
-            line-height: 1.7;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #888;
-            border-top: 1px solid #292929;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <div class="logo">MERAJ.</div>
-        <nav>
-            <a href="#home">होम</a>
-            <a href="#services">सर्विस</a>
-            <a href="#contact">कॉन्टैक्ट</a>
-        </nav>
-    </header><section class="hero" id="home">
-        <div class="tag">✦ आपका डिजिटल सफर यहाँ से शुरू</div>
-
-        <h1>Welcome to<br><span>Meraj Official</span></h1>
-
-        <p class="description">
-            मैं डिजिटल दुनिया में नए आइडियाज़ को शानदार प्रोजेक्ट्स में बदलना सीख रहा हूँ।
-            वेबसाइट, वीडियो एडिटिंग और क्रिएटिव काम के लिए मुझसे संपर्क करें।
-        </p>
-
-        <div>
-            <a class="button" href="#services">मेरी सर्विस देखें</a>
-            <a class="button secondary" href="#contact">संपर्क करें</a>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2>मेरी <span style="color:#f5c451;">Services</span></h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>🌐 Website Design</h3>
-                <p>आधुनिक और आकर्षक वेबसाइट बनाना।</p>
-            </div>
-
-            <div class="card">
-                <h3>🎬 Video Editing</h3>
-                <p>Shorts, Reels और सोशल मीडिया वीडियो एडिटिंग।</p>
-            </div>
-
-            <div class="card">
-                <h3>✨ Creative Design</h3>
-                <p>डिजिटल प्रोजेक्ट्स के लिए क्रिएटिव डिज़ाइन।</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="contact">
-        <h2>आइए <span style="color:#f5c451;">साथ काम करें</span></h2>
-        <p class="description" style="margin:20px auto;">
-            apko koi website ya editing ya app banana 
-            hai sampark kare ।
-        </p>
-
-        <a class="button"
-           href="mailto:your-khanmerj74269@gmail.com">
-           Email करें
-        </a>
-    </section>
-
-    <footer>
-        © 2026 Meraj Official | Made with passion.
-    </footer>
-
-</body>
-</html> <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Meraj Official | Creative Digital Studio</title>
-
-    <meta name="description"
-          content="Meraj Official offers website design, video editing, creative services and product promotion.">
-
-    <meta name="theme-color" content="#080808">
-
-    <style>
-        :root {
-            --bg: #080808;
-            --card: #111111;
-            --gold: #d8b45a;
-            --gold-light: #ffe7a0;
-            --text: #f5f5f5;
-            --muted: #a5a5a5;
-            --border: rgba(216, 180, 90, 0.2);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 90px;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            width: min(1120px, 90%);
-            margin: auto;
-        }
-
-        /* NAVIGATION */
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(8, 8, 8, 0.94);
-            border-bottom: 1px solid var(--border);
-            backdrop-filter: blur(14px);
-        }
-
-        nav {
-            min-height: 76px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: 1px;
-        }
-
-        .logo span {
-            color: var(--gold);
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: #dedede;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--gold);
-        }
-
-        /* BUTTONS */
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 13px 22px;
-            border-radius: 7px;
-            font-weight: bold;
-            font-size: 14px;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .btn-gold {
-            background: linear-gradient(
-                135deg,
-                var(--gold-light),
-                var(--gold)
-            );
-            color: #111;
-        }
-
-        .btn-outline {
-            border: 1px solid var(--gold);
-            color: var(--gold);
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 28px rgba(216, 180, 90, 0.15);
-        }
-
-        /* HERO */
-
-        .hero {
-            min-height: 650px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            background:
-                radial-gradient(
-                    ellipse at 80% 30%,
-                    rgba(216, 180, 90, 0.13),
-                    transparent 45%
-                ),
-                var(--bg);
-        }
-
-        .hero-content {
-            max-width: 780px;
-            padding: 100px 0;
-            animation: fadeUp 1s ease both;
-        }
-
-        .eyebrow {
-            display: inline-block;
-            color: var(--gold);
-            border: 1px solid var(--border);
-            padding: 7px 13px;
-            border-radius: 30px;
-            font-size: 12px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-        }
-
-        h1 {
-            font-size: clamp(42px, 7vw, 78px);
-            line-height: 1.08;
-            letter-spacing: -2px;
-            margin-bottom: 24px;
-        }
-
-        .gold-text {
-            color: var(--gold);
-        }
-
-        .hero p {
-            max-width: 650px;
-            color: var(--muted);
-            font-size: 17px;
-            margin-bottom: 32px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .hero-note {
-            margin-top: 35px;
-            color: #888;
-            font-size: 12px;
-        }
-
-        /* SECTIONS */
-
-        section {
-            padding: 95px 0;
-        }
-
-        .section-heading {
-            max-width: 700px;
-            margin-bottom: 45px;
-        }
-
-        .section-label {
-            color: var(--gold);
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 3px;
-        }
-
-        h2 {
-            font-size: clamp(30px, 5vw, 48px);
-            line-height: 1.2;
-            margin: 12px 0 18px;
-        }
-
-        .section-heading p {
-            color: var(--muted);
-        }
-
-        /* ABOUT */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .about-panel {
-            min-height: 300px;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 35px;
-            background:
-                radial-gradient(
-                    circle at top right,
-                    rgba(216, 180, 90, 0.12),
-                    transparent 55%
-                ),
-                var(--card);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .monogram {
-            font-size: 76px;
-            font-weight: 900;
-            line-height: 1;
-            color: var(--gold);
-            margin-bottom: 20px;
-        }
-
-        .about-text p {
-            color: var(--muted);
-            margin-bottom: 18px;
-        }
-
-        /* SERVICES */
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .service-card {
-            padding: 30px;
-            border-radius: 12px;
-            background: var(--card);
-            border: 1px solid #242424;
-            transition: 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-7px);
-            border-color: var(--gold);
-        }
-
-        .service-icon {
-            font-size: 34px;
-            margin-bottom: 18px;
-        }
-
-        .service-card h3 {
-            color: var(--gold-light);
-            font-size: 20px;
             margin-bottom: 12px;
         }
 
-        .service-card p {
-            color: var(--muted);
-            font-size: 14px;
-            margin-bottom: 18px;
+        .card p {
+            color: #bbb;
         }
 
-        .text-link {
-            color: var(--gold);
-            font-size: 14px;
-            font-weight: bold;
+        #contact {
+            background: #101010;
         }
-
-        /* PORTFOLIO */
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .portfolio-card {
-            background: var(--card);
-            border: 1px solid #252525;
-            border-radius: 12px;
-            padding: 30px;
-        }
-
-        .portfolio-card h3 {
-            margin-bottom: 10px;
-        }
-
-        .portfolio-card p {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .tag {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            border: 1px solid var(--border);
-            color: var(--gold);
-            font-size: 11px;
-        }
-
-        /* PRODUCT PROMOTION */
-
-        .promotion {
-            border: 1px solid var(--border);
-            background:
-                linear-gradient(
-                    120deg,
-                    rgba(216, 180, 90, 0.1),
-                    transparent 65%
-                ),
-                var(--card);
-            border-radius: 16px;
-            padding: 45px;
-        }
-
-        .promotion p {
-            color: var(--muted);
-            max-width: 700px;
-            margin-bottom: 25px;
-        }
-
-        /* CONTACT */
-
-        .contact-box {
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 45px;
-            text-align: center;
-            background: var(--card);
-        }
-
-        .contact-box p {
-            max-width: 600px;
-            margin: 0 auto 25px;
-            color: var(--muted);
-        }
-
-        .contact-buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        /* FOOTER */
 
         footer {
-            padding: 30px 0;
-            border-top: 1px solid #222;
+            padding: 22px;
             text-align: center;
-            color: #888;
-            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #292929;
         }
 
-        footer .logo {
-            margin-bottom: 10px;
-        }
-
-        /* ANIMATIONS */
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(25px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.7s, transform 0.7s;
-        }
-
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* MOBILE */
-
-        @media (max-width: 800px) {
-            .nav-links {
-                gap: 12px;
-                flex-wrap: wrap;
-                justify-content: flex-end;
-            }
-
-            .nav-links a {
-                font-size: 12px;
-            }
-
-            .nav-contact {
-                display: none;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .hero {
-                min-height: auto;
-            }
-        }
-
-        @media (max-width: 520px) {
-            nav {
-                padding: 15px 0;
-                align-items: flex-start;
+        @media (max-width: 600px) {
+            header {
                 flex-direction: column;
-            }
-
-            .nav-links {
-                justify-content: flex-start;
                 gap: 15px;
             }
 
-            .hero-content {
-                padding: 80px 0;
-            }
-
-            h1 {
-                letter-spacing: -1px;
-            }
-
-            section {
-                padding: 65px 0;
-            }
-
-            .services-grid,
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .promotion,
-            .contact-box {
-                padding: 25px;
-            }
-
-            .about-panel {
-                min-height: 230px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                scroll-behavior: auto !important;
-                animation-duration: 0.01ms !important;
-                transition-duration: 0.01ms !important;
-            }
-
-            .reveal {
-                opacity: 1;
-                transform: none;
+            nav a {
+                margin: 0 5px;
+                font-size: 14px;
             }
         }
     </style>
@@ -718,152 +154,99 @@
 
 <body>
 
-    <!-- NAVIGATION -->
-
     <header>
-        <nav class="container">
-            <a href="#home" class="logo">
-                MERAJ<span>.</span>
-            </a>
+        <div class="logo">Meraj Official</div>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
 
-        <!-- HERO -->
-
         <section class="hero" id="home">
-            <div class="container">
-                <div class="hero-content">
+            <h1>Welcome to <span>Meraj Official</span></h1>
 
-                    <span class="eyebrow">
-                        Creative Digital Studio
-                    </span>
+            <p>
+                Creative Website Design, Professional Video Editing
+                and Digital Promotion — all in one place.
+            </p>
 
-                    <h1>
-                        Build Your<br>
-                        <span class="gold-text">
-                            Digital Future.
-                        </span>
-                    </h1>
-
-                    <p>
-                        Welcome to Meraj Official — a creative space
-                        for professional website design, video editing,
-                        digital creativity and product promotion.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#services" class="btn btn-gold">
-                            Explore Services ↗
-                        </a>
-
-                        <a href="#contact" class="btn btn-outline">
-                            Let's Work Together
-                        </a>
-                    </div>
-
-                    <div class="hero-note">
-                        DESIGN · CREATE · GROW
-                    </div>
-
-                </div>
-            </div>
+            <a class="button" href="#services">Explore Services</a>
+            <a class="button" href="#contact">Contact Me</a>
         </section>
-
-        <!-- ABOUT -->
 
         <section id="about">
-            <div class="container about-grid">
+            <h2>About Me</h2>
 
-                <div class="about-panel reveal">
-                    <div class="monogram">M.</div>
-                    <h3>Meraj Official</h3>
-                    <p class="gold-text">
-                        Creativity with a Professional Vision
-                    </p>
+            <p class="description">
+                Welcome to Meraj Official. I am learning and building
+                creative skills in website design, video editing,
+                thumbnail design and product promotion.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>My Services</h2>
+
+            <p class="description">
+                Creative solutions for your digital presence.
+            </p>
+
+            <div class="services">
+
+                <div class="card">
+                    <h3>Website Design</h3>
+                    <p>Modern and responsive websites for personal brands and businesses.</p>
                 </div>
 
-                <div class="about-text reveal">
-                    <span class="section-label">About Me</span>
+                <div class="card">
+                    <h3>Video Editing</h3>
+                    <p>Creative edits for YouTube Shorts, Reels and promotional videos.</p>
+                </div>
 
-                    <h2>
-                        Turning Ideas Into
-                        <span class="gold-text">Digital Reality.</span>
-                    </h2>
+                <div class="card">
+                    <h3>Thumbnail Design</h3>
+                    <p>Attractive thumbnails for gaming videos and YouTube channels.</p>
+                </div>
 
-                    <p>
-                        I am building Meraj Official as a creative
-                        digital brand focused on modern websites,
-                        engaging videos and online product promotion.
-                    </p>
-
-                    <p>
-                        My goal is to create attractive digital
-                        experiences, develop useful skills and
-                        help brands present themselves professionally.
-                    </p>
-
-                    <a href="#contact" class="btn btn-gold">
-                        Contact Me ↗
-                    </a>
+                <div class="card">
+                    <h3>Product Promotion</h3>
+                    <p>Creative promotional content for products and online stores.</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- SERVICES -->
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
 
-        <section id="services">
-            <div class="container">
+            <p class="description">
+                My creative projects will be showcased here.
+                Stay tuned for upcoming work!
+            </p>
+        </section>
 
-                <div class="section-heading reveal">
-                    <span class="section-label">What I Do</span>
+        <section id="contact">
+            <h2>Let's Work Together</h2>
 
-                    <h2>
-                        Professional
-                        <span class="gold-text">Services.</span>
-                    </h2>
+            <p class="description">
+                Have a project or collaboration in mind?
+                Contact me to discuss your ideas.
+            </p>
 
-                    <p>
-                        Creative digital solutions for individuals,
-                        creators and businesses.
-                    </p>
-                </div>
+            <p>WhatsApp and Email details will be added here.</p>
+        </section>
 
-                <div class="services-grid">
+    </main>
 
-                    <article class="service-card reveal">
-                        <div class="service-icon">💻</div>
-                        <h3>Website Design</h3>
+    <footer>
+        © 2026 Meraj Official. All rights reserved.
+    </footer>
 
-                        <p>
-                            Modern, responsive and attractive
-                            websites for personal brands,
-                            portfolios and small businesses.
-                        </p>
-
-                        <a href="#contact" class="text-link">
-                            Discuss a Project ↗
-                        </a>
-                    </article>
-
-                    <article class="service-card reveal">
-                        <div class="service-icon">🎬</div>
-                        <h3>Video Editing</h3>
-
-                        <p>
-                            Creative editing concepts for
-                            YouTube Shorts, Reels, gaming
-                            videos and promotional content.
-                        </p>
-
-                        <a href="#contact
+</body>
+</html>
