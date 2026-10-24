@@ -3,153 +3,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meraj Official | Creative Studio</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #080808;
-            color: white;
-            line-height: 1.6;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #050810;
+    color: #f5f7ff;
+    line-height: 1.7;
+}
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 22px 8%;
-            border-bottom: 1px solid #292929;
-        }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #080d18;
+    border-bottom: 1px solid #172b4d;
+}
 
-        .logo {
-            color: #f5c451;
-            font-size: 24px;
-            font-weight: bold;
-        }
+.logo {
+    color: #35a7ff;
+    font-size: 25px;
+    font-weight: bold;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-        }
+nav a {
+    color: #e0eaff;
+    text-decoration: none;
+    margin-left: 16px;
+    transition: 0.3s;
+}
 
-        nav a:hover {
-            color: #f5c451;
-        }
+nav a:hover {
+    color: #35a7ff;
+}
 
-        .hero {
-            min-height: 75vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 50px 20px;
-            background: radial-gradient(circle, #29200b, #080808 70%);
-        }
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: radial-gradient(
+        circle at top,
+        #102b55,
+        #050810 70%
+    );
+}
 
-        .hero h1 {
-            font-size: clamp(36px, 7vw, 68px);
-            margin-bottom: 15px;
-        }
+.hero h1 {
+    font-size: clamp(36px, 7vw, 68px);
+    margin-bottom: 18px;
+}
 
-        .hero h1 span {
-            color: #f5c451;
-        }
+.hero h1 span {
+    color: #35a7ff;
+    text-shadow: 0 0 25px #1678ff66;
+}
 
-        .hero p {
-            color: #ccc;
-            max-width: 600px;
-            margin-bottom: 25px;
-        }
+.hero p {
+    color: #b9c8e5;
+    max-width: 650px;
+    margin-bottom: 28px;
+}
 
-        .button {
-            display: inline-block;
-            background: #f5c451;
-            color: #080808;
-            padding: 12px 24px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 5px;
-        }
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #1685ff, #35c8ff);
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 6px;
+    box-shadow: 0 0 18px #1685ff30;
+    transition: 0.3s;
+}
 
-        .button:hover {
-            background: white;
-        }
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #1685ff70;
+}
 
-        section {
-            padding: 65px 8%;
-            text-align: center;
-        }
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
 
-        section h2 {
-            color: #f5c451;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
+section h2 {
+    color: #35a7ff;
+    font-size: 34px;
+    margin-bottom: 22px;
+}
 
-        .description {
-            color: #bbb;
-            max-width: 650px;
-            margin: 0 auto 30px;
-        }
+.description {
+    color: #b9c8e5;
+    max-width: 680px;
+    margin: 0 auto 30px;
+}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
+.services {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 22px;
+}
 
-        .card {
-            background: #141414;
-            padding: 28px;
-            border: 1px solid #303030;
-            border-radius: 15px;
-            transition: 0.3s;
-        }
+.card {
+    background: linear-gradient(145deg, #101a2d, #090e19);
+    padding: 30px;
+    border: 1px solid #1c3558;
+    border-radius: 18px;
+    transition: 0.3s;
+}
 
-        .card:hover {
-            border-color: #f5c451;
-            transform: translateY(-5px);
-        }
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #35a7ff;
+    box-shadow: 0 10px 30px #1678ff20;
+}
 
-        .card h3 {
-            margin-bottom: 12px;
-        }
+.card h3 {
+    color: #f5f7ff;
+    margin-bottom: 12px;
+}
 
-        .card p {
-            color: #bbb;
-        }
+.card p {
+    color: #b9c8e5;
+}
 
-        #contact {
-            background: #101010;
-        }
+#contact {
+    background: #080d18;
+    border-top: 1px solid #172b4d;
+}
 
-        footer {
-            padding: 22px;
-            text-align: center;
-            color: #999;
-            border-top: 1px solid #292929;
-        }
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #8293b3;
+    background: #04070d;
+    border-top: 1px solid #172b4d;
+}
 
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-            nav a {
-                margin: 0 5px;
-                font-size: 14px;
-            }
-        }
-    </style>
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+}
+</style>
 </head>
 
 <body>
