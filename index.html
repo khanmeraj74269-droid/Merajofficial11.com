@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
@@ -204,4 +203,667 @@
     </footer>
 
 </body>
-</html>
+</html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meraj Official | Creative Digital Studio</title>
+
+    <meta name="description"
+          content="Meraj Official offers website design, video editing, creative services and product promotion.">
+
+    <meta name="theme-color" content="#080808">
+
+    <style>
+        :root {
+            --bg: #080808;
+            --card: #111111;
+            --gold: #d8b45a;
+            --gold-light: #ffe7a0;
+            --text: #f5f5f5;
+            --muted: #a5a5a5;
+            --border: rgba(216, 180, 90, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+
+        /* NAVIGATION */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(8, 8, 8, 0.94);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(14px);
+        }
+
+        nav {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #dedede;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        /* BUTTONS */
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 13px 22px;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-gold {
+            background: linear-gradient(
+                135deg,
+                var(--gold-light),
+                var(--gold)
+            );
+            color: #111;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--gold);
+            color: var(--gold);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(216, 180, 90, 0.15);
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(
+                    ellipse at 80% 30%,
+                    rgba(216, 180, 90, 0.13),
+                    transparent 45%
+                ),
+                var(--bg);
+        }
+
+        .hero-content {
+            max-width: 780px;
+            padding: 100px 0;
+            animation: fadeUp 1s ease both;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--gold);
+            border: 1px solid var(--border);
+            padding: 7px 13px;
+            border-radius: 30px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 78px);
+            line-height: 1.08;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+        }
+
+        .gold-text {
+            color: var(--gold);
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: var(--muted);
+            font-size: 17px;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .hero-note {
+            margin-top: 35px;
+            color: #888;
+            font-size: 12px;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 95px 0;
+        }
+
+        .section-heading {
+            max-width: 700px;
+            margin-bottom: 45px;
+        }
+
+        .section-label {
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            font-size: clamp(30px, 5vw, 48px);
+            line-height: 1.2;
+            margin: 12px 0 18px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-panel {
+            min-height: 300px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 35px;
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(216, 180, 90, 0.12),
+                    transparent 55%
+                ),
+                var(--card);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .monogram {
+            font-size: 76px;
+            font-weight: 900;
+            line-height: 1;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        /* SERVICES */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            padding: 30px;
+            border-radius: 12px;
+            background: var(--card);
+            border: 1px solid #242424;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--gold);
+        }
+
+        .service-icon {
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            color: var(--gold-light);
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .text-link {
+            color: var(--gold);
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* PORTFOLIO */
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .portfolio-card {
+            background: var(--card);
+            border: 1px solid #252525;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .portfolio-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .portfolio-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid var(--border);
+            color: var(--gold);
+            font-size: 11px;
+        }
+
+        /* PRODUCT PROMOTION */
+
+        .promotion {
+            border: 1px solid var(--border);
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(216, 180, 90, 0.1),
+                    transparent 65%
+                ),
+                var(--card);
+            border-radius: 16px;
+            padding: 45px;
+        }
+
+        .promotion p {
+            color: var(--muted);
+            max-width: 700px;
+            margin-bottom: 25px;
+        }
+
+        /* CONTACT */
+
+        .contact-box {
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 45px;
+            text-align: center;
+            background: var(--card);
+        }
+
+        .contact-box p {
+            max-width: 600px;
+            margin: 0 auto 25px;
+            color: var(--muted);
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            padding: 30px 0;
+            border-top: 1px solid #222;
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+        }
+
+        footer .logo {
+            margin-bottom: 10px;
+        }
+
+        /* ANIMATIONS */
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.7s, transform 0.7s;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+            .nav-links {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .nav-contact {
+                display: none;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 520px) {
+            nav {
+                padding: 15px 0;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .nav-links {
+                justify-content: flex-start;
+                gap: 15px;
+            }
+
+            .hero-content {
+                padding: 80px 0;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .promotion,
+            .contact-box {
+                padding: 25px;
+            }
+
+            .about-panel {
+                min-height: 230px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">
+                MERAJ<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        Creative Digital Studio
+                    </span>
+
+                    <h1>
+                        Build Your<br>
+                        <span class="gold-text">
+                            Digital Future.
+                        </span>
+                    </h1>
+
+                    <p>
+                        Welcome to Meraj Official — a creative space
+                        for professional website design, video editing,
+                        digital creativity and product promotion.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-gold">
+                            Explore Services ↗
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Let's Work Together
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        DESIGN · CREATE · GROW
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+        <section id="about">
+            <div class="container about-grid">
+
+                <div class="about-panel reveal">
+                    <div class="monogram">M.</div>
+                    <h3>Meraj Official</h3>
+                    <p class="gold-text">
+                        Creativity with a Professional Vision
+                    </p>
+                </div>
+
+                <div class="about-text reveal">
+                    <span class="section-label">About Me</span>
+
+                    <h2>
+                        Turning Ideas Into
+                        <span class="gold-text">Digital Reality.</span>
+                    </h2>
+
+                    <p>
+                        I am building Meraj Official as a creative
+                        digital brand focused on modern websites,
+                        engaging videos and online product promotion.
+                    </p>
+
+                    <p>
+                        My goal is to create attractive digital
+                        experiences, develop useful skills and
+                        help brands present themselves professionally.
+                    </p>
+
+                    <a href="#contact" class="btn btn-gold">
+                        Contact Me ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+
+        <section id="services">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">What I Do</span>
+
+                    <h2>
+                        Professional
+                        <span class="gold-text">Services.</span>
+                    </h2>
+
+                    <p>
+                        Creative digital solutions for individuals,
+                        creators and businesses.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+                        <div class="service-icon">💻</div>
+                        <h3>Website Design</h3>
+
+                        <p>
+                            Modern, responsive and attractive
+                            websites for personal brands,
+                            portfolios and small businesses.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            Discuss a Project ↗
+                        </a>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon">🎬</div>
+                        <h3>Video Editing</h3>
+
+                        <p>
+                            Creative editing concepts for
+                            YouTube Shorts, Reels, gaming
+                            videos and promotional content.
+                        </p>
+
+                        <a href="#contact
